@@ -3,6 +3,7 @@
 
 ## Loading and preprocessing the data
 ```{r}
+library(XLConnect)
 data <- read.csv("activity.csv")
 data_waNA <- data[which(data$steps!= "NA"), ]
 ```
